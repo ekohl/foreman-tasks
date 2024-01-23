@@ -7,7 +7,7 @@ module ForemanTasks
                       :foreign_key => :execution_plan_id,
                       :inverse_of  => :remote_tasks
 
-    scope :triggered, -> { where(:state => 'triggered') }
+    scope :triggered, -> { where(:state => ['triggered', 'parent-triggered']) }
     scope :pending,   -> { where(:state => 'new') }
     scope :external,  -> { where(:state => 'external') }
 
@@ -49,10 +49,11 @@ module ForemanTasks
         self.parent_task_id = parent['task_id']
         self.state = 'parent-triggered'
       else
+        exception = data['exception']
         # Tell the action the task on the smart proxy stopped
         ForemanTasks.dynflow.world.event execution_plan_id,
                                          step_id,
-                                         ::Actions::ProxyAction::ProxyActionStopped.new,
+                                         ::Actions::ProxyAction::ProxyActionStoppedEvent[exception],
                                          optional: true
       end
       save!

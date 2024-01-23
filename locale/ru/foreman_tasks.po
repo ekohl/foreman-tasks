@@ -1,0 +1,906 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_tasks package.
+#
+# Translators:
+# Yulia <yulia.poyarkova@redhat.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: foreman_tasks 8.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2016-02-12 14:04+0000\n"
+"Last-Translator: Yulia <yulia.poyarkova@redhat.com>, 2016\n"
+"Language-Team: Russian (http://app.transifex.com/foreman/foreman/language/ru/)"
+"\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=1"
+"1 && n%100<=14)? 2 : 3);\n"
+
+msgid "%(last)s Last %(time)s"
+msgstr ""
+
+msgid "%(older)s Older %(time)s"
+msgstr ""
+
+msgid "%s Selected Tasks"
+msgstr ""
+
+msgid "%s is not valid format of cron line"
+msgstr "Недопустимый формат cron: %s"
+
+msgid "%{count} tasks are in running or paused state for more than a day"
+msgstr ""
+
+msgid "%{total} task(s), %{success} success, %{failed} fail"
+msgstr "Всего задач: %{total}; из них успешно %{success}, неудачно %{failed}"
+
+msgid "%{value} is not allowed input type"
+msgstr "Недопустимый выбор: %{value}"
+
+msgid "%{value} is not allowed triggering mode"
+msgstr "Недопустимый режим активации: %{value} "
+
+msgid "%{value} is wrong format"
+msgstr "Недопустимый формат: %{value}"
+
+msgid "12h"
+msgstr ""
+
+msgid "24h"
+msgstr ""
+
+msgid "A notification when tasks run for suspiciously long time"
+msgstr ""
+
+msgid "A paused task represents a process that has not finished properly. Any task in paused state can lead to potential inconsistency and needs to be resolved."
+msgstr ""
+
+msgid "A special label for tracking a recurring job. There can be only one active job with a given purpose at a time."
+msgstr ""
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "Action with sub plans"
+msgstr "Действия с подпланами"
+
+msgid "Active"
+msgstr "Активно"
+
+msgid "Active Filters:"
+msgstr ""
+
+msgid "Active or disabled recurring logic with purpose %s already exists"
+msgstr ""
+
+msgid "All %s tasks are selected."
+msgstr ""
+
+msgid "All proxies with the required feature are unavailable at the moment"
+msgstr ""
+
+msgid "Allow proxy batch tasks"
+msgstr ""
+
+msgid "Allow triggering tasks on the smart proxy in batches"
+msgstr ""
+
+msgid "Associated resources"
+msgstr "Связанные ресурсы"
+
+#. TRANSLATORS: Time widget for when a task should start
+msgid "At"
+msgstr "в"
+
+msgid "Back to tasks"
+msgstr ""
+
+msgid "Backtrace"
+msgstr "Стек вызовов"
+
+msgid "Bulk action"
+msgstr "Групповое действие"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Cancel Selected"
+msgstr ""
+
+msgid "Cancel enforced: the task might be still running on the proxy"
+msgstr "Принудительная отмена: возможно, задача продолжает выполнение на прокси."
+
+msgid "Cancel recurring logic"
+msgstr "Отменить периодическое выполнение"
+
+msgid "Cancel selected cancellable tasks"
+msgstr ""
+
+msgid "Cancel selected tasks"
+msgstr ""
+
+msgid "Cancel specific tasks by ID"
+msgstr ""
+
+msgid "Cancel tasks matching search string"
+msgstr ""
+
+msgid "Canceling selected tasks, this might take a while"
+msgstr ""
+
+msgid "Canceling with force selected tasks, this might take a while"
+msgstr ""
+
+msgid "Cancelled"
+msgstr "Отменено"
+
+msgid "Cannot cancel tasks at the moment"
+msgstr ""
+
+msgid "Cannot force cancel tasks at the moment"
+msgstr ""
+
+msgid "Cannot resume tasks at the moment"
+msgstr ""
+
+msgid "Cannot update a cancelled Recurring Logic."
+msgstr ""
+
+msgid "Changing request id %{request_id} to saved id %{saved_id}"
+msgstr ""
+
+msgid "Check for long running tasks"
+msgstr ""
+
+msgid "Clear All Filters"
+msgstr ""
+
+msgid "Clear Cancelled"
+msgstr ""
+
+msgid "Complete"
+msgstr ""
+
+msgid "Conflicts with tasks:"
+msgstr "Конфликт с задачами:"
+
+msgid "Could not cancel step."
+msgstr ""
+
+msgid "Could not receive data: %s"
+msgstr ""
+
+msgid "Cron line"
+msgstr "Cron"
+
+msgid "Cron line format 'a b c d e', where: %s"
+msgstr "Строка cron определяется в формате «a b c d e», где %s"
+
+msgid "Current iteration"
+msgstr "Текущая итерация"
+
+msgid "Data to be sent to the action"
+msgstr "Данные для передачи действию"
+
+msgid "Days"
+msgstr "Дни"
+
+msgid "Days of week"
+msgstr "Дни недели"
+
+msgid "Delayed"
+msgstr "Отложенный"
+
+msgid "Delete recurring logics by search query"
+msgstr ""
+
+msgid "Deliver notifications about long running tasks"
+msgstr ""
+
+msgid "Details"
+msgstr "Свойства"
+
+msgid "Details of %s task"
+msgstr ""
+
+msgid "Disable"
+msgstr "Отключить"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid "Duration"
+msgstr "Продолжительность"
+
+msgid "Dynflow console"
+msgstr "Консоль Dynflow"
+
+msgid "Empty bulk action"
+msgstr "Пустое групповое действие"
+
+msgid "Enable"
+msgstr "Включить"
+
+msgid "Enable dynflow console"
+msgstr ""
+
+msgid "Enable the dynflow console (/foreman_tasks/dynflow) for debugging"
+msgstr "Разрешить отладку в консоли Dynflow (/foreman_tasks/dynflow)"
+
+msgid "Ends"
+msgstr "Заканчивается"
+
+msgid "Ends at"
+msgstr "Время окончания"
+
+msgid "Errors"
+msgstr "Ошибки"
+
+msgid "Errors:"
+msgstr ""
+
+msgid "Event delivered by request %{request_id}"
+msgstr ""
+
+msgid "Exception"
+msgstr "Исключение"
+
+msgid "Execute now"
+msgstr "Запустить сейчас"
+
+msgid "Execution plan data not available "
+msgstr ""
+
+msgid "Export All"
+msgstr ""
+
+msgid "External Id"
+msgstr "Внешний идентификатор"
+
+msgid "Failed to check on tasks on proxy at %{url}: %{exception}"
+msgstr ""
+
+msgid "Failed to initialize"
+msgstr "Не удалось инициализировать"
+
+msgid "Failed to trigger task on the smart proxy: "
+msgstr ""
+
+msgid "Finished"
+msgstr "Завершено"
+
+msgid "Force Cancel"
+msgstr ""
+
+msgid "Force Cancel Selected"
+msgstr ""
+
+msgid "Force Cancel selected tasks"
+msgstr ""
+
+msgid "Force Unlock"
+msgstr "Принудительно разблокировать"
+
+msgid "Foreman Tasks"
+msgstr ""
+
+msgid "Fri"
+msgstr "Пт"
+
+msgid "I understand that this may cause harm and have working database backups of all backend services."
+msgstr "Я осознаю, что эта операция может повредить данные, и подтверждаю, что у меня есть резервные копии баз данных для всех базовых служб."
+
+msgid "ID"
+msgstr "Идентификатор"
+
+msgid "Id"
+msgstr "Идентификатор"
+
+msgid "Immediate"
+msgstr "Немедленный"
+
+msgid "Import Puppet classes"
+msgstr "Импорт классов Puppet"
+
+msgid "Import facts"
+msgstr "Импорт фактов"
+
+msgid "Indicates that the action should be cancelled if it cannot be started before this time."
+msgstr "Обозначает, что действие следует отменить, если оно не будет запущено до указанного времени."
+
+msgid "Initialization error: %s"
+msgstr "Ошибка инициализации: %s"
+
+msgid "Input"
+msgstr "Вход"
+
+msgid "Iteration limit"
+msgstr "Максимальное число итераций"
+
+msgid "Label"
+msgstr "Метка"
+
+msgid "Last occurrence"
+msgstr "Последнее событие"
+
+msgid "Last start time"
+msgstr ""
+
+msgid "Latest Warning/Error Tasks"
+msgstr "Последние предупреждения и ошибки"
+
+msgid "Less than a second"
+msgstr ""
+
+msgid "List of tasks"
+msgstr ""
+
+msgid "List recurring logics"
+msgstr "Показать правила периодического выполнения"
+
+msgid "List tasks"
+msgstr "Список задач"
+
+msgid "Locks"
+msgstr "Блокировки"
+
+msgid "Long running tasks"
+msgstr ""
+
+msgid "Mon"
+msgstr "Пн"
+
+msgid "More details"
+msgstr ""
+
+msgid "More than"
+msgstr ""
+
+msgid "N/A"
+msgstr "Недоступно"
+
+msgid "Name"
+msgstr "Название"
+
+msgid "Never"
+msgstr "Никогда"
+
+msgid "Next occurrence"
+msgstr "Следующее событие"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "No Tasks"
+msgstr ""
+
+msgid "No errors"
+msgstr "Нет ошибок"
+
+msgid "No proxy defined for execution"
+msgstr ""
+
+msgid "No running steps"
+msgstr "Нет действий."
+
+msgid "No start or end dates"
+msgstr ""
+
+msgid "No task could be started"
+msgstr ""
+
+msgid "No. of Tasks"
+msgstr "Число задач"
+
+msgid "Not all the selected tasks can be cancelled"
+msgstr ""
+
+msgid "Not all the selected tasks can be resumed"
+msgstr ""
+
+msgid "Number of attempts to start a task on the smart proxy before failing"
+msgstr "Максимальное число повторных попыток запуска задачи на капсуле"
+
+msgid "Number of seconds to wait for synchronous task to finish."
+msgstr ""
+
+msgid "Number of tasks which should be sent to the smart proxy in one request, if foreman_tasks_proxy_batch_trigger is enabled"
+msgstr ""
+
+#. TRANSLATORS: Button text for saying when a task should end
+msgid "On"
+msgstr "Настроить"
+
+msgid "Operation"
+msgstr "Операция"
+
+msgid "Other includes all stopped tasks that are cancelled or pending"
+msgstr ""
+
+msgid "Other:"
+msgstr ""
+
+msgid "Output"
+msgstr "Вывод"
+
+msgid "Output:"
+msgstr ""
+
+msgid "Parent task"
+msgstr "Родительская задача"
+
+msgid "Paused"
+msgstr "Приостановлена"
+
+msgid "Please inspect their state, fix their errors and resume them."
+msgstr "Проверьте их состояние, исправьте ошибки и перезапустите еще раз."
+
+msgid "Please provide a search parameter in the request"
+msgstr ""
+
+msgid "Please provide at least one of search or task_ids parameters in the request"
+msgstr ""
+
+msgid "Polling intervals multiplier"
+msgstr ""
+
+msgid "Polling multiplier which is used to multiply the default polling intervals. This can be used to prevent polling too frequently for long running tasks."
+msgstr ""
+
+msgid "Proxy action retry count"
+msgstr ""
+
+msgid "Proxy action retry interval"
+msgstr ""
+
+msgid "Proxy task gone missing from the smart proxy"
+msgstr ""
+
+msgid "Proxy tasks batch size"
+msgstr ""
+
+msgid "Purpose"
+msgstr ""
+
+msgid "Raw"
+msgstr "Необработанные параметры"
+
+msgid "Raw input"
+msgstr "Необработанные исходные данные"
+
+msgid "Raw output"
+msgstr "Необработанный вывод"
+
+msgid "Recurring Logics"
+msgstr ""
+
+msgid "Recurring logic"
+msgstr "Периодическое выполнение"
+
+msgid "Recurring logics"
+msgstr "Правила периодического выполнения"
+
+msgid "Refresh Data"
+msgstr ""
+
+msgid "Repeat N times"
+msgstr "Количество повторений"
+
+msgid "Repeat until"
+msgstr "Повторять до"
+
+msgid "Repeats"
+msgstr "Повторяется"
+
+msgid "Require auth for dynflow console"
+msgstr ""
+
+msgid "Require user to be authenticated as user with admin rights when accessing dynflow console"
+msgstr "Разрешать доступ к консоли Dynflow только пользователям с правами администратора"
+
+msgid "Required lock is already taken by other running tasks."
+msgstr "Ресурс блокируется другими задачами."
+
+msgid "Resource search_params requires resource_type and resource_id to be specified"
+msgstr "Для того чтобы настроить search_params для ресурса, необходимо установить resource_id"
+
+msgid "Resources for %s task(s) will be unlocked and will not prevent other tasks from being run. As the task(s) might be still running, it should be avoided to use this unless you are really sure the task(s) got stuck."
+msgstr ""
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "Resume"
+msgstr "Возобновить"
+
+msgid "Resume Selected"
+msgstr ""
+
+msgid "Resume all paused error tasks"
+msgstr "Возобновить все приостановленные задачи"
+
+msgid "Resume selected tasks"
+msgstr ""
+
+msgid "Resume specific tasks by ID"
+msgstr "Возобновить выборочные задачи по идентификатору"
+
+msgid "Resume tasks matching search string"
+msgstr "Возобновить задачи, соответствующие строке поиска"
+
+msgid "Resuming selected tasks, this might take a while"
+msgstr ""
+
+msgid "Running"
+msgstr "Работает"
+
+msgid "Running Steps"
+msgstr "Последовательность действий"
+
+msgid "Sat"
+msgstr "Сб"
+
+msgid "Schedule"
+msgstr "Расписание"
+
+msgid "Schedule future execution"
+msgstr "Настроить время запуска"
+
+msgid "Scheduled"
+msgstr ""
+
+msgid "Search query"
+msgstr "Поисковый запрос"
+
+msgid "See %{link} for more details on how to resolve the issue"
+msgstr ""
+
+msgid "Select Action"
+msgstr "Действия"
+
+msgid "Select all {count} tasks"
+msgstr ""
+
+msgid "Select row"
+msgstr ""
+
+msgid "Send data to the task from external executor (such as smart_proxy_dynflow)"
+msgstr "Отправить задаче данные от внешнего исполнителя (например, от smart_proxy_dynflow)"
+
+msgid "Set up recurring execution"
+msgstr "Настроить многократное выполнение"
+
+msgid "Setting is off"
+msgstr ""
+
+msgid "Show recurring logic details"
+msgstr "Показать параметры периодического выполнения"
+
+msgid "Start at"
+msgstr "Время запуска"
+
+msgid "Start auto-reloading"
+msgstr "Включить автоматическое обновление"
+
+msgid "Start before"
+msgstr "Не позже чем"
+
+msgid "Started"
+msgstr ""
+
+msgid "Started at"
+msgstr "Время начала"
+
+msgid "State"
+msgstr "Состояние"
+
+msgid "State updated at"
+msgstr ""
+
+msgid "Step Canceled"
+msgstr ""
+
+msgid "Stop auto-reloading"
+msgstr "Отменить автоматическое обновление"
+
+msgid "Stop selected stoppable tasks"
+msgstr ""
+
+msgid "Stop specific tasks by ID"
+msgstr ""
+
+msgid "Stop tasks matching search string"
+msgstr ""
+
+msgid "Stopped"
+msgstr ""
+
+msgid "Sub tasks"
+msgstr "Подзадачи"
+
+msgid "Sub tasks of %s"
+msgstr ""
+
+msgid "Subscribe"
+msgstr ""
+
+msgid "Sun"
+msgstr "Вс"
+
+msgid "Sync task timeout"
+msgstr ""
+
+msgid "Task"
+msgstr "Задача"
+
+msgid "Task Details"
+msgstr "Описание задачи"
+
+msgid "Task Status"
+msgstr "Статус задачи"
+
+msgid "Task aborted: the task might be still running on the proxy"
+msgstr ""
+
+msgid "Task cannot be canceled"
+msgstr ""
+
+msgid "Task count"
+msgstr "Количество задач"
+
+msgid "Task group common"
+msgstr "Общие для групп"
+
+msgid "Task search_params requires task_id to be specified"
+msgstr "Для того чтобы настроить search_params для задачи, необходимо установить task_id"
+
+msgid "Task was canceled"
+msgstr ""
+
+msgid "Tasks"
+msgstr "Задачи"
+
+msgid "Tasks lingering in states %{states} since %{time}"
+msgstr ""
+
+msgid "Tasks pending since %s"
+msgstr ""
+
+msgid "Tasks troubleshooting URL"
+msgstr ""
+
+msgid "The ID of the step inside the execution plan to send the event to"
+msgstr "Идентификатор этапа в плане исполнения, которому будет отправлено событие"
+
+msgid "The recommended approach is to investigate the error messages below and in 'errors' tab, address the primary cause of the issue and resume the task."
+msgstr ""
+
+msgid "The recurring logic was disabled."
+msgstr ""
+
+msgid "The recurring logic was enabled."
+msgstr ""
+
+msgid "The smart proxy task %s failed."
+msgstr "Ошибка выполнения задачи %s на смарт-прокси."
+
+msgid "The targets are of different types"
+msgstr "Попытка выполнения действия над разными типами объектов"
+
+msgid "The task cannot be aborted at the moment."
+msgstr ""
+
+msgid "The task could not be started"
+msgstr ""
+
+msgid "There is %{count} paused task in the system that need attention"
+msgid_plural "There are %{count} paused tasks in the system that need attention"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This action will delete all cancelled recurring logics. Please note that this action can't be reversed."
+msgstr ""
+
+msgid "This will %(action)s %(number)s task(s), putting them in the %(state)s state. Are you sure?"
+msgstr ""
+
+msgid "This will unlock the resources that the task is running against. Please note that this might lead to inconsistent state and should be used with caution, after making sure that the task can't be resumed."
+msgstr "В результате выполнения этого действия ресурсы, занятые этой задачей, будут разблокированы. Стоит помнить, что это может оставить данные в несогласованном состоянии, поэтому должно использоваться с осторожностью, и только если продолжение выполнения задачи обычными способами невозможно."
+
+msgid "Thu"
+msgstr "Чт"
+
+msgid "Time in seconds between retries"
+msgstr "Интервал повтора (в секундах)"
+
+msgid "Total"
+msgstr "Всего"
+
+msgid "Troubleshooting"
+msgstr "Диагностика"
+
+msgid "Trying to abort the task"
+msgstr ""
+
+msgid "Trying to cancel step"
+msgstr ""
+
+msgid "Tue"
+msgstr "Вт"
+
+msgid "Type %s for search_params is not supported"
+msgstr "search_params не поддерживает тип %s"
+
+msgid "UUID of the task"
+msgstr "UUUID задачи"
+
+msgid "Unable to create mail notification: %s"
+msgstr ""
+
+msgid "Unable to enable mail notification to user '%s': %s"
+msgstr ""
+
+msgid "Undo selection"
+msgstr "Отменить выбор"
+
+msgid "Unlimited"
+msgstr "∞"
+
+msgid "Unlock"
+msgstr "Разблокировать"
+
+msgid "Update recurring logic"
+msgstr ""
+
+msgid "Url pointing to the task troubleshooting documentation. It should contain %{label} placeholder, that will be replaced with normalized task label (restricted to only alphanumeric characters)). %{version} placeholder is also available."
+msgstr ""
+
+msgid "User search_params requires user_id to be specified"
+msgstr "Для того чтобы настроить search_params для пользователя, необходимо установить user_id"
+
+msgid "Wed"
+msgstr "Ср"
+
+msgid "With focus on last"
+msgstr ""
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "You can find resource locks on this page. Exclusive lock marked with locked icon means that no other task can use locked resource while this task is running. Non-exclusive lock marked with unlocked icon means other tasks can access the resource freely, it is only used to indicate the relation of this task with the resource"
+msgstr ""
+
+msgid "You do not have permission"
+msgstr ""
+
+msgid "activation key"
+msgstr "ключ активации"
+
+msgid "cannot be cancelled with force at the moment."
+msgstr ""
+
+msgid "content view"
+msgstr "представление"
+
+msgid "content view version"
+msgstr "версия представления"
+
+msgid "could not be resumed"
+msgstr ""
+
+msgid "error"
+msgstr ""
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is day of month (range: 1-31)"
+msgstr "— день месяца (1–31)"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is day of week (range: 0-6)"
+msgstr "— день недели (0–6)"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is hour (range: 0-23)"
+msgstr "— часы (1–24)"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is minute (range: 0-59)"
+msgstr "— минуты (0–59)"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is month (range: 1-12)"
+msgstr "— месяц (1–12)"
+
+msgid "is not a valid format"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "mode"
+msgstr ""
+
+msgid "mode has to be one of %{allowed_modes}"
+msgstr ""
+
+msgid "older"
+msgstr ""
+
+msgid "organization"
+msgstr "организация"
+
+msgid "other"
+msgstr ""
+
+msgid "paused"
+msgstr ""
+
+msgid "product"
+msgstr "продукт"
+
+msgid "repository"
+msgstr "репозиторий"
+
+msgid "resources cannot be unlocked at the moment."
+msgstr ""
+
+msgid "resources were unlocked "
+msgstr ""
+
+msgid "resources were unlocked with force."
+msgstr ""
+
+msgid "result"
+msgstr ""
+
+msgid "running"
+msgstr "выполняется"
+
+msgid "scheduled"
+msgstr ""
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "state"
+msgstr "состояние"
+
+msgid "stopped"
+msgstr ""
+
+msgid "success"
+msgstr "успешно"
+
+msgid "system"
+msgstr "система"
+
+msgid "task has to be cancellable"
+msgstr ""
+
+msgid "task has to be resumable"
+msgstr ""
+
+msgid "time"
+msgstr ""
+
+msgid "troubleshooting documentation"
+msgstr ""
+
+msgid "user"
+msgstr "пользователь"
+
+msgid "warning"
+msgstr ""
+
+msgid "was cancelled"
+msgstr ""
+
+msgid "was resumed"
+msgstr ""
+
+msgid "week"
+msgstr ""

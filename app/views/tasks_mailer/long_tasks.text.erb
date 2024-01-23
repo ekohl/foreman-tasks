@@ -1,0 +1,16 @@
+<%= _("Tasks lingering in states %{states} since %{time}") % {
+  time: @report.time - @report.interval,
+  states: @report.states.join(', ')
+} %>
+
+More details: <%= foreman_tasks_tasks_url(search: @report.query) %>
+
+<% @report.tasks.each do |task| %>
+<%= _('ID') %>: <%= task.id %>
+<%= _('Action') %>: <%= task.action %>
+<%= _('Label') %>: <%= task.label %>
+<%= _('State') %>: <%= task.state %>
+<%= _('State updated at') %>: <%= task.state_updated_at %>
+<%= _('Details') %>: <%= foreman_tasks_task_url(task) %>
+
+<% end %>

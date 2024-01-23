@@ -1,24 +1,20 @@
-# English translations for foreman_tasks package.
-# Copyright (C) 2016 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the foreman_tasks package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_tasks 0.3.4\n"
+"Project-Id-Version: foreman_tasks 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-02-03 09:55-0500\n"
+"PO-Revision-Date: 2023-05-18 08:15+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: English\n"
-"Language: en\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"\n"
-
-msgid "${taskReload ? 'Stop' : 'Start'}  auto-reloading"
-msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 msgid "%(last)s Last %(time)s"
 msgstr ""
@@ -30,6 +26,9 @@ msgid "%s Selected Tasks"
 msgstr ""
 
 msgid "%s is not valid format of cron line"
+msgstr ""
+
+msgid "%{count} tasks are in running or paused state for more than a day"
 msgstr ""
 
 msgid "%{total} task(s), %{success} success, %{failed} fail"
@@ -50,10 +49,13 @@ msgstr ""
 msgid "24h"
 msgstr ""
 
-msgid ":after setting in tasks cleanup section is deprecated, use :after in :rules section to set the value. to cleanup rules"
+msgid "A notification when tasks run for suspiciously long time"
 msgstr ""
 
 msgid "A paused task represents a process that has not finished properly. Any task in paused state can lead to potential inconsistency and needs to be resolved."
+msgstr ""
+
+msgid "A special label for tracking a recurring job. There can be only one active job with a given purpose at a time."
 msgstr ""
 
 msgid "Action"
@@ -68,7 +70,10 @@ msgstr ""
 msgid "Active Filters:"
 msgstr ""
 
-msgid "All %s tasks are selected. "
+msgid "Active or disabled recurring logic with purpose %s already exists"
+msgstr ""
+
+msgid "All %s tasks are selected."
 msgstr ""
 
 msgid "All proxies with the required feature are unavailable at the moment"
@@ -144,6 +149,9 @@ msgstr ""
 msgid "Changing request id %{request_id} to saved id %{saved_id}"
 msgstr ""
 
+msgid "Check for long running tasks"
+msgstr ""
+
 msgid "Clear All Filters"
 msgstr ""
 
@@ -159,10 +167,7 @@ msgstr ""
 msgid "Could not cancel step."
 msgstr ""
 
-msgid "Could not receive data: ${APIerror && APIerror.message}"
-msgstr ""
-
-msgid "Could not receive data: ${error && error.message}"
+msgid "Could not receive data: %s"
 msgstr ""
 
 msgid "Cron line"
@@ -187,6 +192,9 @@ msgid "Delayed"
 msgstr ""
 
 msgid "Delete recurring logics by search query"
+msgstr ""
+
+msgid "Deliver notifications about long running tasks"
 msgstr ""
 
 msgid "Details"
@@ -255,6 +263,9 @@ msgstr ""
 msgid "Failed to initialize"
 msgstr ""
 
+msgid "Failed to trigger task on the smart proxy: "
+msgstr ""
+
 msgid "Finished"
 msgstr ""
 
@@ -274,6 +285,9 @@ msgid "Foreman Tasks"
 msgstr ""
 
 msgid "Fri"
+msgstr ""
+
+msgid "I understand that this may cause harm and have working database backups of all backend services."
 msgstr ""
 
 msgid "ID"
@@ -330,7 +344,13 @@ msgstr ""
 msgid "Locks"
 msgstr ""
 
+msgid "Long running tasks"
+msgstr ""
+
 msgid "Mon"
+msgstr ""
+
+msgid "More details"
 msgstr ""
 
 msgid "More than"
@@ -427,9 +447,6 @@ msgstr ""
 msgid "Polling multiplier which is used to multiply the default polling intervals. This can be used to prevent polling too frequently for long running tasks."
 msgstr ""
 
-msgid "Preupgrade job"
-msgstr ""
-
 msgid "Proxy action retry count"
 msgstr ""
 
@@ -440,6 +457,9 @@ msgid "Proxy task gone missing from the smart proxy"
 msgstr ""
 
 msgid "Proxy tasks batch size"
+msgstr ""
+
+msgid "Purpose"
 msgstr ""
 
 msgid "Raw"
@@ -463,9 +483,6 @@ msgstr ""
 msgid "Refresh Data"
 msgstr ""
 
-msgid "Remote action:"
-msgstr ""
-
 msgid "Repeat N times"
 msgstr ""
 
@@ -485,6 +502,9 @@ msgid "Required lock is already taken by other running tasks."
 msgstr ""
 
 msgid "Resource search_params requires resource_type and resource_id to be specified"
+msgstr ""
+
+msgid "Resources for %s task(s) will be unlocked and will not prevent other tasks from being run. As the task(s) might be still running, it should be avoided to use this unless you are really sure the task(s) got stuck."
 msgstr ""
 
 msgid "Result"
@@ -538,7 +558,7 @@ msgstr ""
 msgid "Select Action"
 msgstr ""
 
-msgid "Select All"
+msgid "Select all {count} tasks"
 msgstr ""
 
 msgid "Select row"
@@ -559,6 +579,9 @@ msgstr ""
 msgid "Start at"
 msgstr ""
 
+msgid "Start auto-reloading"
+msgstr ""
+
 msgid "Start before"
 msgstr ""
 
@@ -571,7 +594,13 @@ msgstr ""
 msgid "State"
 msgstr ""
 
+msgid "State updated at"
+msgstr ""
+
 msgid "Step Canceled"
+msgstr ""
+
+msgid "Stop auto-reloading"
 msgstr ""
 
 msgid "Stop selected stoppable tasks"
@@ -590,6 +619,9 @@ msgid "Sub tasks"
 msgstr ""
 
 msgid "Sub tasks of %s"
+msgstr ""
+
+msgid "Subscribe"
 msgstr ""
 
 msgid "Sun"
@@ -628,6 +660,12 @@ msgstr ""
 msgid "Tasks"
 msgstr ""
 
+msgid "Tasks lingering in states %{states} since %{time}"
+msgstr ""
+
+msgid "Tasks pending since %s"
+msgstr ""
+
 msgid "Tasks troubleshooting URL"
 msgstr ""
 
@@ -663,6 +701,12 @@ msgstr[1] ""
 msgid "This action will delete all cancelled recurring logics. Please note that this action can't be reversed."
 msgstr ""
 
+msgid "This will %(action)s %(number)s task(s), putting them in the %(state)s state. Are you sure?"
+msgstr ""
+
+msgid "This will unlock the resources that the task is running against. Please note that this might lead to inconsistent state and should be used with caution, after making sure that the task can't be resumed."
+msgstr ""
+
 msgid "Thu"
 msgstr ""
 
@@ -690,6 +734,12 @@ msgstr ""
 msgid "UUID of the task"
 msgstr ""
 
+msgid "Unable to create mail notification: %s"
+msgstr ""
+
+msgid "Unable to enable mail notification to user '%s': %s"
+msgstr ""
+
 msgid "Undo selection"
 msgstr ""
 
@@ -715,6 +765,9 @@ msgid "With focus on last"
 msgstr ""
 
 msgid "Yes"
+msgstr ""
+
+msgid "You can find resource locks on this page. Exclusive lock marked with locked icon means that no other task can use locked resource while this task is running. Non-exclusive lock marked with unlocked icon means other tasks can access the resource freely, it is only used to indicate the relation of this task with the resource"
 msgstr ""
 
 msgid "You do not have permission"
@@ -756,6 +809,9 @@ msgstr ""
 
 #. TRANSLATORS: this translation is referring to an option which is a time interval
 msgid "is month (range: 1-12)"
+msgstr ""
+
+msgid "is not a valid format"
 msgstr ""
 
 msgid "last"
@@ -822,9 +878,6 @@ msgid "task has to be cancellable"
 msgstr ""
 
 msgid "task has to be resumable"
-msgstr ""
-
-msgid "tasks."
 msgstr ""
 
 msgid "time"

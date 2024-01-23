@@ -18,9 +18,10 @@ module Actions
           init_counts and suspend
         end
       when TriggerNextBatch
-        trigger_remote_tasks_batches(event.batches) and suspend
+        trigger_remote_tasks_batches(event.batches)
       when TriggerLastBatch
-        trigger_remote_tasks_batch and on_finish
+        output[:planning_finished] = true
+        trigger_remote_tasks_batches
       when ::Dynflow::Action::Skip
         # do nothing
       end
@@ -28,6 +29,7 @@ module Actions
 
     def trigger_remote_tasks_batches(amount = 1)
       amount.times { trigger_remote_tasks_batch }
+      done? ? on_finish : suspend
     end
 
     def trigger_remote_tasks_batch
@@ -42,7 +44,10 @@ module Actions
     rescue => e
       action_logger.warn "Could not trigger task on the smart proxy"
       action_logger.warn e
-      batch.each { |remote_task| remote_task.update_from_batch_trigger({}) }
+      # The response contains non-serializable objects
+      # TypeError: no _dump_data is defined for class Monitor
+      e.response = nil
+      batch.each { |remote_task| remote_task.update_from_batch_trigger({ 'exception' => e }) }
       output[:failed_count] += batch.size
     end
 
@@ -52,15 +57,18 @@ module Actions
     end
 
     def check_finish
-      if output[:planned_count] + output[:failed_count] + batch_size >= input[:total_count]
-        trigger_remote_tasks_batch and on_finish
-      else
-        suspend
-      end
+      return on_finish if done?
+
+      # If we're not done yet, try to trigger anything (if available)
+      # and then either finish or suspend
+      trigger_remote_tasks_batches
     end
 
     def done?
-      output[:planned_count] + output[:failed_count] >= input[:total_count]
+      # We're done when we've either:
+      # - dispatched everything
+      # - received the last message
+      output[:planned_count] + output[:failed_count] >= input[:total_count] || output[:planning_finished]
     end
 
     def remote_tasks

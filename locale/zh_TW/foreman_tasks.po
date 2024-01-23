@@ -1,0 +1,903 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_tasks package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: foreman_tasks 8.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2016-02-12 14:04+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Taiwan) (http://app.transifex.com/foreman/foreman/lang"
+"uage/zh_TW/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "%(last)s Last %(time)s"
+msgstr ""
+
+msgid "%(older)s Older %(time)s"
+msgstr ""
+
+msgid "%s Selected Tasks"
+msgstr ""
+
+msgid "%s is not valid format of cron line"
+msgstr "%s 不是 cron 行的正確格式"
+
+msgid "%{count} tasks are in running or paused state for more than a day"
+msgstr ""
+
+msgid "%{total} task(s), %{success} success, %{failed} fail"
+msgstr "%{total} 任務，%{success} 成功，%{failed} 失敗"
+
+msgid "%{value} is not allowed input type"
+msgstr "%{value} 並非允許的輸入類型"
+
+msgid "%{value} is not allowed triggering mode"
+msgstr "%{value} 並不允許觸發模式"
+
+msgid "%{value} is wrong format"
+msgstr "%{value} 的格式錯誤"
+
+msgid "12h"
+msgstr ""
+
+msgid "24h"
+msgstr ""
+
+msgid "A notification when tasks run for suspiciously long time"
+msgstr ""
+
+msgid "A paused task represents a process that has not finished properly. Any task in paused state can lead to potential inconsistency and needs to be resolved."
+msgstr ""
+
+msgid "A special label for tracking a recurring job. There can be only one active job with a given purpose at a time."
+msgstr ""
+
+msgid "Action"
+msgstr "動作"
+
+msgid "Action with sub plans"
+msgstr "有子計畫的動作"
+
+msgid "Active"
+msgstr "啟用中"
+
+msgid "Active Filters:"
+msgstr ""
+
+msgid "Active or disabled recurring logic with purpose %s already exists"
+msgstr ""
+
+msgid "All %s tasks are selected."
+msgstr ""
+
+msgid "All proxies with the required feature are unavailable at the moment"
+msgstr ""
+
+msgid "Allow proxy batch tasks"
+msgstr ""
+
+msgid "Allow triggering tasks on the smart proxy in batches"
+msgstr ""
+
+msgid "Associated resources"
+msgstr "相聯資源"
+
+#. TRANSLATORS: Time widget for when a task should start
+msgid "At"
+msgstr "於"
+
+msgid "Back to tasks"
+msgstr ""
+
+msgid "Backtrace"
+msgstr "追蹤"
+
+msgid "Bulk action"
+msgstr "批次動作"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel Selected"
+msgstr ""
+
+msgid "Cancel enforced: the task might be still running on the proxy"
+msgstr "強制取消：任務可能還在代理伺服器上執行"
+
+msgid "Cancel recurring logic"
+msgstr "取消週期邏輯"
+
+msgid "Cancel selected cancellable tasks"
+msgstr ""
+
+msgid "Cancel selected tasks"
+msgstr ""
+
+msgid "Cancel specific tasks by ID"
+msgstr ""
+
+msgid "Cancel tasks matching search string"
+msgstr ""
+
+msgid "Canceling selected tasks, this might take a while"
+msgstr ""
+
+msgid "Canceling with force selected tasks, this might take a while"
+msgstr ""
+
+msgid "Cancelled"
+msgstr "已取消"
+
+msgid "Cannot cancel tasks at the moment"
+msgstr ""
+
+msgid "Cannot force cancel tasks at the moment"
+msgstr ""
+
+msgid "Cannot resume tasks at the moment"
+msgstr ""
+
+msgid "Cannot update a cancelled Recurring Logic."
+msgstr ""
+
+msgid "Changing request id %{request_id} to saved id %{saved_id}"
+msgstr ""
+
+msgid "Check for long running tasks"
+msgstr ""
+
+msgid "Clear All Filters"
+msgstr ""
+
+msgid "Clear Cancelled"
+msgstr ""
+
+msgid "Complete"
+msgstr ""
+
+msgid "Conflicts with tasks:"
+msgstr "和任務有衝突："
+
+msgid "Could not cancel step."
+msgstr ""
+
+msgid "Could not receive data: %s"
+msgstr ""
+
+msgid "Cron line"
+msgstr "Cron 行"
+
+msgid "Cron line format 'a b c d e', where: %s"
+msgstr "Cron 行格式 'a b c d e'，其中：%s"
+
+msgid "Current iteration"
+msgstr "現有重述"
+
+msgid "Data to be sent to the action"
+msgstr "要發送到動作的資料"
+
+msgid "Days"
+msgstr "天"
+
+msgid "Days of week"
+msgstr "星期幾"
+
+msgid "Delayed"
+msgstr "已延遲"
+
+msgid "Delete recurring logics by search query"
+msgstr ""
+
+msgid "Deliver notifications about long running tasks"
+msgstr ""
+
+msgid "Details"
+msgstr "詳細資訊"
+
+msgid "Details of %s task"
+msgstr ""
+
+msgid "Disable"
+msgstr "停用"
+
+msgid "Disabled"
+msgstr "已停用"
+
+msgid "Duration"
+msgstr "持續時間"
+
+msgid "Dynflow console"
+msgstr "Dynflow 主控台"
+
+msgid "Empty bulk action"
+msgstr "清空批次動作"
+
+msgid "Enable"
+msgstr "啟用"
+
+msgid "Enable dynflow console"
+msgstr ""
+
+msgid "Enable the dynflow console (/foreman_tasks/dynflow) for debugging"
+msgstr "啟用 dynflow 主控台（/foreman_tasks/dynflow）作為偵錯使用"
+
+msgid "Ends"
+msgstr "結束"
+
+msgid "Ends at"
+msgstr "結束於"
+
+msgid "Errors"
+msgstr "錯誤"
+
+msgid "Errors:"
+msgstr ""
+
+msgid "Event delivered by request %{request_id}"
+msgstr ""
+
+msgid "Exception"
+msgstr "例外"
+
+msgid "Execute now"
+msgstr "立即執行"
+
+msgid "Execution plan data not available "
+msgstr ""
+
+msgid "Export All"
+msgstr ""
+
+msgid "External Id"
+msgstr "外部 ID"
+
+msgid "Failed to check on tasks on proxy at %{url}: %{exception}"
+msgstr ""
+
+msgid "Failed to initialize"
+msgstr "無法初始化"
+
+msgid "Failed to trigger task on the smart proxy: "
+msgstr ""
+
+msgid "Finished"
+msgstr "已完成"
+
+msgid "Force Cancel"
+msgstr ""
+
+msgid "Force Cancel Selected"
+msgstr ""
+
+msgid "Force Cancel selected tasks"
+msgstr ""
+
+msgid "Force Unlock"
+msgstr "強制解除鎖定"
+
+msgid "Foreman Tasks"
+msgstr ""
+
+msgid "Fri"
+msgstr "週五"
+
+msgid "I understand that this may cause harm and have working database backups of all backend services."
+msgstr "我瞭解這可能會導致傷害，而且我已經備份了所有後端服務的資料庫。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Id"
+msgstr "Id"
+
+msgid "Immediate"
+msgstr "立即"
+
+msgid "Import Puppet classes"
+msgstr "匯入 Puppet 類別"
+
+msgid "Import facts"
+msgstr "匯入詳情"
+
+msgid "Indicates that the action should be cancelled if it cannot be started before this time."
+msgstr "這表示如果不能在這時間之前開始，就應該取消動作。"
+
+msgid "Initialization error: %s"
+msgstr "初始化錯誤：%s"
+
+msgid "Input"
+msgstr "輸入"
+
+msgid "Iteration limit"
+msgstr "重述限制"
+
+msgid "Label"
+msgstr "標籤"
+
+msgid "Last occurrence"
+msgstr "最後一次發生"
+
+msgid "Last start time"
+msgstr ""
+
+msgid "Latest Warning/Error Tasks"
+msgstr "最新的警告 / 錯誤任務"
+
+msgid "Less than a second"
+msgstr ""
+
+msgid "List of tasks"
+msgstr ""
+
+msgid "List recurring logics"
+msgstr "列出週期邏輯"
+
+msgid "List tasks"
+msgstr "列出任務"
+
+msgid "Locks"
+msgstr "鎖"
+
+msgid "Long running tasks"
+msgstr ""
+
+msgid "Mon"
+msgstr "週一"
+
+msgid "More details"
+msgstr ""
+
+msgid "More than"
+msgstr ""
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Name"
+msgstr "名稱"
+
+msgid "Never"
+msgstr "永不"
+
+msgid "Next occurrence"
+msgstr "下次發生"
+
+msgid "No"
+msgstr "否"
+
+msgid "No Tasks"
+msgstr ""
+
+msgid "No errors"
+msgstr "無錯誤"
+
+msgid "No proxy defined for execution"
+msgstr ""
+
+msgid "No running steps"
+msgstr "沒有執行步驟"
+
+msgid "No start or end dates"
+msgstr ""
+
+msgid "No task could be started"
+msgstr ""
+
+msgid "No. of Tasks"
+msgstr "任務編號"
+
+msgid "Not all the selected tasks can be cancelled"
+msgstr ""
+
+msgid "Not all the selected tasks can be resumed"
+msgstr ""
+
+msgid "Number of attempts to start a task on the smart proxy before failing"
+msgstr "在智慧代理上啟動任務的嘗試次數"
+
+msgid "Number of seconds to wait for synchronous task to finish."
+msgstr ""
+
+msgid "Number of tasks which should be sent to the smart proxy in one request, if foreman_tasks_proxy_batch_trigger is enabled"
+msgstr ""
+
+#. TRANSLATORS: Button text for saying when a task should end
+msgid "On"
+msgstr "開啟"
+
+msgid "Operation"
+msgstr "作業"
+
+msgid "Other includes all stopped tasks that are cancelled or pending"
+msgstr ""
+
+msgid "Other:"
+msgstr ""
+
+msgid "Output"
+msgstr "輸出"
+
+msgid "Output:"
+msgstr ""
+
+msgid "Parent task"
+msgstr "父任務"
+
+msgid "Paused"
+msgstr "已暫停"
+
+msgid "Please inspect their state, fix their errors and resume them."
+msgstr "請檢查它們的狀態，修正錯誤然後繼續。"
+
+msgid "Please provide a search parameter in the request"
+msgstr ""
+
+msgid "Please provide at least one of search or task_ids parameters in the request"
+msgstr ""
+
+msgid "Polling intervals multiplier"
+msgstr ""
+
+msgid "Polling multiplier which is used to multiply the default polling intervals. This can be used to prevent polling too frequently for long running tasks."
+msgstr ""
+
+msgid "Proxy action retry count"
+msgstr ""
+
+msgid "Proxy action retry interval"
+msgstr ""
+
+msgid "Proxy task gone missing from the smart proxy"
+msgstr ""
+
+msgid "Proxy tasks batch size"
+msgstr ""
+
+msgid "Purpose"
+msgstr ""
+
+msgid "Raw"
+msgstr "Raw"
+
+msgid "Raw input"
+msgstr "原始輸入"
+
+msgid "Raw output"
+msgstr "原始輸出"
+
+msgid "Recurring Logics"
+msgstr ""
+
+msgid "Recurring logic"
+msgstr "週期邏輯"
+
+msgid "Recurring logics"
+msgstr "週期邏輯"
+
+msgid "Refresh Data"
+msgstr ""
+
+msgid "Repeat N times"
+msgstr "重複 N 次"
+
+msgid "Repeat until"
+msgstr "重複直到"
+
+msgid "Repeats"
+msgstr "重複"
+
+msgid "Require auth for dynflow console"
+msgstr ""
+
+msgid "Require user to be authenticated as user with admin rights when accessing dynflow console"
+msgstr "存取 dynflow 主控台時，需要使用者授權成為擁有 admin 權限的使用者"
+
+msgid "Required lock is already taken by other running tasks."
+msgstr "所需要的所已經由其它執行中任務取得。"
+
+msgid "Resource search_params requires resource_type and resource_id to be specified"
+msgstr "資源 search_params 需要指定 resource_type 與 resource_id"
+
+msgid "Resources for %s task(s) will be unlocked and will not prevent other tasks from being run. As the task(s) might be still running, it should be avoided to use this unless you are really sure the task(s) got stuck."
+msgstr ""
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Resume"
+msgstr "繼續"
+
+msgid "Resume Selected"
+msgstr ""
+
+msgid "Resume all paused error tasks"
+msgstr "繼續所有處於暫停狀態的錯誤任務"
+
+msgid "Resume selected tasks"
+msgstr ""
+
+msgid "Resume specific tasks by ID"
+msgstr "透過 ID 繼續特定任務"
+
+msgid "Resume tasks matching search string"
+msgstr "繼續符合搜尋字串的任務"
+
+msgid "Resuming selected tasks, this might take a while"
+msgstr ""
+
+msgid "Running"
+msgstr "執行中"
+
+msgid "Running Steps"
+msgstr "執行中的步驟"
+
+msgid "Sat"
+msgstr "週六"
+
+msgid "Schedule"
+msgstr "排程"
+
+msgid "Schedule future execution"
+msgstr "排程未來的執行"
+
+msgid "Scheduled"
+msgstr ""
+
+msgid "Search query"
+msgstr "搜尋查詢"
+
+msgid "See %{link} for more details on how to resolve the issue"
+msgstr ""
+
+msgid "Select Action"
+msgstr "選擇動作"
+
+msgid "Select all {count} tasks"
+msgstr ""
+
+msgid "Select row"
+msgstr ""
+
+msgid "Send data to the task from external executor (such as smart_proxy_dynflow)"
+msgstr "從外部執行者（例如 smart_proxy_dynflow）發送資料到任務"
+
+msgid "Set up recurring execution"
+msgstr "設定週期執行"
+
+msgid "Setting is off"
+msgstr ""
+
+msgid "Show recurring logic details"
+msgstr "顯示週期邏輯的詳情"
+
+msgid "Start at"
+msgstr "開始於"
+
+msgid "Start auto-reloading"
+msgstr "開始自動載入"
+
+msgid "Start before"
+msgstr "在這之前開始"
+
+msgid "Started"
+msgstr ""
+
+msgid "Started at"
+msgstr "起始於"
+
+msgid "State"
+msgstr "狀態"
+
+msgid "State updated at"
+msgstr ""
+
+msgid "Step Canceled"
+msgstr ""
+
+msgid "Stop auto-reloading"
+msgstr "停止自動重新載入"
+
+msgid "Stop selected stoppable tasks"
+msgstr ""
+
+msgid "Stop specific tasks by ID"
+msgstr ""
+
+msgid "Stop tasks matching search string"
+msgstr ""
+
+msgid "Stopped"
+msgstr ""
+
+msgid "Sub tasks"
+msgstr "子任務"
+
+msgid "Sub tasks of %s"
+msgstr ""
+
+msgid "Subscribe"
+msgstr ""
+
+msgid "Sun"
+msgstr "週日"
+
+msgid "Sync task timeout"
+msgstr ""
+
+msgid "Task"
+msgstr "工作"
+
+msgid "Task Details"
+msgstr "任務的詳細資訊"
+
+msgid "Task Status"
+msgstr "任務狀態"
+
+msgid "Task aborted: the task might be still running on the proxy"
+msgstr ""
+
+msgid "Task cannot be canceled"
+msgstr ""
+
+msgid "Task count"
+msgstr "工作數量"
+
+msgid "Task group common"
+msgstr "任務群組的一般事項"
+
+msgid "Task search_params requires task_id to be specified"
+msgstr "任務 search_params 需要指定 task_id"
+
+msgid "Task was canceled"
+msgstr ""
+
+msgid "Tasks"
+msgstr "工作"
+
+msgid "Tasks lingering in states %{states} since %{time}"
+msgstr ""
+
+msgid "Tasks pending since %s"
+msgstr ""
+
+msgid "Tasks troubleshooting URL"
+msgstr ""
+
+msgid "The ID of the step inside the execution plan to send the event to"
+msgstr "執行計畫中要發送事件的步驟 ID"
+
+msgid "The recommended approach is to investigate the error messages below and in 'errors' tab, address the primary cause of the issue and resume the task."
+msgstr ""
+
+msgid "The recurring logic was disabled."
+msgstr ""
+
+msgid "The recurring logic was enabled."
+msgstr ""
+
+msgid "The smart proxy task %s failed."
+msgstr "智慧型代理任務 %s 失敗。"
+
+msgid "The targets are of different types"
+msgstr "目標類型不同"
+
+msgid "The task cannot be aborted at the moment."
+msgstr ""
+
+msgid "The task could not be started"
+msgstr ""
+
+msgid "There is %{count} paused task in the system that need attention"
+msgid_plural "There are %{count} paused tasks in the system that need attention"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "This action will delete all cancelled recurring logics. Please note that this action can't be reversed."
+msgstr ""
+
+msgid "This will %(action)s %(number)s task(s), putting them in the %(state)s state. Are you sure?"
+msgstr ""
+
+msgid "This will unlock the resources that the task is running against. Please note that this might lead to inconsistent state and should be used with caution, after making sure that the task can't be resumed."
+msgstr "這會解鎖任務執行的資源。請注意，這可能會導致不一致的狀態，請小心使用，並確定任務不能被繼續執行。"
+
+msgid "Thu"
+msgstr "週四"
+
+msgid "Time in seconds between retries"
+msgstr "重試之間的時間（秒）"
+
+msgid "Total"
+msgstr "總數"
+
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+msgid "Trying to abort the task"
+msgstr ""
+
+msgid "Trying to cancel step"
+msgstr ""
+
+msgid "Tue"
+msgstr "週二"
+
+msgid "Type %s for search_params is not supported"
+msgstr "不支援 search_params 的 %s"
+
+msgid "UUID of the task"
+msgstr "任務的 UUID"
+
+msgid "Unable to create mail notification: %s"
+msgstr ""
+
+msgid "Unable to enable mail notification to user '%s': %s"
+msgstr ""
+
+msgid "Undo selection"
+msgstr ""
+
+msgid "Unlimited"
+msgstr "無限制"
+
+msgid "Unlock"
+msgstr "解鎖"
+
+msgid "Update recurring logic"
+msgstr ""
+
+msgid "Url pointing to the task troubleshooting documentation. It should contain %{label} placeholder, that will be replaced with normalized task label (restricted to only alphanumeric characters)). %{version} placeholder is also available."
+msgstr ""
+
+msgid "User search_params requires user_id to be specified"
+msgstr "使用者 search_params 需要指定 user_id"
+
+msgid "Wed"
+msgstr "週三"
+
+msgid "With focus on last"
+msgstr ""
+
+msgid "Yes"
+msgstr "是"
+
+msgid "You can find resource locks on this page. Exclusive lock marked with locked icon means that no other task can use locked resource while this task is running. Non-exclusive lock marked with unlocked icon means other tasks can access the resource freely, it is only used to indicate the relation of this task with the resource"
+msgstr ""
+
+msgid "You do not have permission"
+msgstr ""
+
+msgid "activation key"
+msgstr "啟動金鑰"
+
+msgid "cannot be cancelled with force at the moment."
+msgstr ""
+
+msgid "content view"
+msgstr "內容視域"
+
+msgid "content view version"
+msgstr "內容視域版本"
+
+msgid "could not be resumed"
+msgstr ""
+
+msgid "error"
+msgstr ""
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is day of month (range: 1-31)"
+msgstr "是日期（範圍：1-31）"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is day of week (range: 0-6)"
+msgstr "是星期幾（範圍：0-6）"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is hour (range: 0-23)"
+msgstr "是小時（範圍：0-23）"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is minute (range: 0-59)"
+msgstr "是分鐘（範圍：0-59）"
+
+#. TRANSLATORS: this translation is referring to an option which is a time interval
+msgid "is month (range: 1-12)"
+msgstr "是月份（範圍：1-12）"
+
+msgid "is not a valid format"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "mode"
+msgstr ""
+
+msgid "mode has to be one of %{allowed_modes}"
+msgstr ""
+
+msgid "older"
+msgstr ""
+
+msgid "organization"
+msgstr "組織"
+
+msgid "other"
+msgstr ""
+
+msgid "paused"
+msgstr ""
+
+msgid "product"
+msgstr "產品"
+
+msgid "repository"
+msgstr "軟體庫"
+
+msgid "resources cannot be unlocked at the moment."
+msgstr ""
+
+msgid "resources were unlocked "
+msgstr ""
+
+msgid "resources were unlocked with force."
+msgstr ""
+
+msgid "result"
+msgstr ""
+
+msgid "running"
+msgstr "執行中"
+
+msgid "scheduled"
+msgstr ""
+
+msgid "seconds"
+msgstr "秒"
+
+msgid "state"
+msgstr "狀態"
+
+msgid "stopped"
+msgstr ""
+
+msgid "success"
+msgstr "成功"
+
+msgid "system"
+msgstr "系統"
+
+msgid "task has to be cancellable"
+msgstr ""
+
+msgid "task has to be resumable"
+msgstr ""
+
+msgid "time"
+msgstr ""
+
+msgid "troubleshooting documentation"
+msgstr ""
+
+msgid "user"
+msgstr "使用者"
+
+msgid "warning"
+msgstr ""
+
+msgid "was cancelled"
+msgstr ""
+
+msgid "was resumed"
+msgstr ""
+
+msgid "week"
+msgstr ""

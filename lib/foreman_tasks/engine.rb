@@ -16,16 +16,9 @@ module ForemanTasks
       SETTINGS[:foreman_tasks] = { :assets => { :precompile => assets_to_precompile } }
     end
 
-    initializer 'foreman_tasks.register_gettext', :after => :load_config_initializers do
-      locale_dir = File.join(File.expand_path('../..', __dir__), 'locale')
-      locale_domain = 'foreman_tasks'
-
-      Foreman::Gettext::Support.add_text_domain locale_domain, locale_dir
-    end
-
     initializer 'foreman_tasks.register_plugin', :before => :finisher_hook do |_app|
       Foreman::Plugin.register :"foreman-tasks" do
-        requires_foreman '>= 3.2.0'
+        requires_foreman '>= 3.9'
         divider :top_menu, :parent => :monitor_menu, :last => true, :caption => N_('Foreman Tasks')
         menu :top_menu, :tasks,
              :url_hash => { :controller => 'foreman_tasks/tasks', :action => :index },
@@ -42,17 +35,17 @@ module ForemanTasks
         security_block :foreman_tasks do |_map|
           permission :view_foreman_tasks, { :'foreman_tasks/tasks' => [:auto_complete_search, :sub_tasks, :index, :summary, :summary_sub_tasks, :show],
                                             :'foreman_tasks/react' => [:index],
-                                            :'foreman_tasks/api/tasks' => [:bulk_search, :show, :index, :summary, :summary_sub_tasks, :details, :sub_tasks] }, :resource_type => ForemanTasks::Task.name
+                                            :'foreman_tasks/api/tasks' => [:bulk_search, :show, :index, :summary, :summary_sub_tasks, :details, :sub_tasks] }, :resource_type => 'ForemanTasks::Task'
           permission :edit_foreman_tasks, { :'foreman_tasks/tasks' => [:resume, :unlock, :force_unlock, :cancel_step, :cancel, :abort],
-                                            :'foreman_tasks/api/tasks' => [:bulk_resume, :bulk_cancel, :bulk_stop] }, :resource_type => ForemanTasks::Task.name
+                                            :'foreman_tasks/api/tasks' => [:bulk_resume, :bulk_cancel, :bulk_stop] }, :resource_type => 'ForemanTasks::Task'
 
-          permission :create_recurring_logics, {}, :resource_type => ForemanTasks::RecurringLogic.name
+          permission :create_recurring_logics, {}, :resource_type => 'ForemanTasks::RecurringLogic'
 
           permission :view_recurring_logics, { :'foreman_tasks/recurring_logics' => [:auto_complete_search, :index, :show],
-                                               :'foreman_tasks/api/recurring_logics' => [:index, :show] }, :resource_type => ForemanTasks::RecurringLogic.name
+                                               :'foreman_tasks/api/recurring_logics' => [:index, :show] }, :resource_type => 'ForemanTasks::RecurringLogic'
 
           permission :edit_recurring_logics, { :'foreman_tasks/recurring_logics' => [:cancel, :enable, :disable, :clear_cancelled],
-                                               :'foreman_tasks/api/recurring_logics' => [:cancel, :update, :bulk_destroy] }, :resource_type => ForemanTasks::RecurringLogic.name
+                                               :'foreman_tasks/api/recurring_logics' => [:cancel, :update, :bulk_destroy] }, :resource_type => 'ForemanTasks::RecurringLogic'
         end
 
         add_all_permissions_to_default_roles
@@ -116,7 +109,7 @@ module ForemanTasks
         register_graphql_query_field :recurring_logic, '::Types::RecurringLogic', :record_field
         register_graphql_query_field :recurring_logics, '::Types::RecurringLogic', :collection_field
 
-        register_graphql_mutation_field :cancel_recurring_logic, ::Mutations::RecurringLogics::Cancel
+        register_graphql_mutation_field :cancel_recurring_logic, '::Mutations::RecurringLogics::Cancel'
 
         logger :dynflow, :enabled => true
         logger :action, :enabled => true
@@ -128,6 +121,8 @@ module ForemanTasks
 
         widget 'foreman_tasks/tasks/dashboard/tasks_status', :sizex => 6, :sizey => 1, :name => N_('Task Status')
         widget 'foreman_tasks/tasks/dashboard/latest_tasks_in_error_warning', :sizex => 6, :sizey => 1, :name => N_('Latest Warning/Error Tasks')
+
+        register_gettext domain: "foreman_tasks"
 
         ForemanTasks.dynflow.eager_load_actions!
         extend_observable_events(::Dynflow::Action.descendants.select { |klass| klass <= ::Actions::ObservableAction }.map(&:namespaced_event_names))
@@ -166,7 +161,11 @@ module ForemanTasks
         world.middleware.use Actions::Middleware::KeepCurrentUser, :before => ::Dynflow::Middleware::Common::Transaction
         world.middleware.use Actions::Middleware::KeepCurrentTimezone
         world.middleware.use Actions::Middleware::KeepCurrentRequestID
-        world.middleware.use ::Actions::Middleware::LoadSettingValues if Gem::Version.new(::SETTINGS[:version]) >= Gem::Version.new('2.5')
+        world.middleware.use ::Actions::Middleware::LoadSettingValues
+        ForemanTasks.register_scheduled_task(Actions::CheckLongRunningTasks, ENV['FOREMAN_TASKS_CHECK_LONG_RUNNING_TASKS_CRONLINE'] || '0 0 * * *')
+      end
+      ::ForemanTasks.dynflow.config.on_init(true) do
+        ::ForemanTasks::Task::DynflowTask.consistency_check
       end
     end
 
@@ -188,7 +187,7 @@ module ForemanTasks
     end
 
     rake_tasks do
-      %w[dynflow.rake test.rake export_tasks.rake cleanup.rake generate_task_actions.rake].each do |rake_file|
+      %w[dynflow.rake test.rake export_tasks.rake cleanup.rake generate_task_actions.rake reschedule_long_running_tasks_checker.rake].each do |rake_file|
         full_path = File.expand_path("../tasks/#{rake_file}", __FILE__)
         load full_path if File.exist?(full_path)
       end
